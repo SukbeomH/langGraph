@@ -1,0 +1,108 @@
+.app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.request-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.request-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.function-viewer {
+    background: #f5f5f5;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.history-page {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.search-section {
+    display: flex;
+    gap: 10px;
+}
+
+.history-item {
+    border: 1px solid #eee;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+/* 자동완성 스타일 제거 */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+/* 자동완성 관련 스타일 개선 */
+input,
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Chrome 자동완성 배경색 제거 */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-text-fill-color: inherit !important;
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+    transition: background-color 5000s ease-in-out 0s;
+    background: transparent !important;
+}
+
+/* Firefox 자동완성 배경색 제거 */
+input:autofill,
+textarea:autofill {
+    background: transparent !important;
+}
+
+.example-button {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 8px 16px;
+    margin: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.example-button:hover {
+    background: #e9ecef;
+    border-color: #ced4da;
+}
+
+.example-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}

@@ -1,4 +1,4 @@
 .env
-javascripts/node_modules
-javascripts/yarn.lock
+*/node_modules
+*/yarn.lock
 
