@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Function Generator</title>
+    
+    <!-- Vis.js 라이브러리 -->
+    <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- 커스텀 스타일 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 좌측: 입력 및 컨트롤 패널 -->
+        <div class="control-panel">
+            <h2>Function Generator</h2>
+            <div class="input-section">
+                <h3>자연어 요청 입력</h3>
+                <textarea id="input" placeholder="함수 생성을 위한 요구사항을 자연어로 입력하세요..."></textarea>
+                <button id="processBtn" class="primary-btn">생성 시작</button>
+            </div>
+
+            <div class="search-section">
+                <h3>유사 함수 검색</h3>
+                <input type="text" id="searchQuery" placeholder="검색어 입력...">
+                <button id="searchBtn">검색</button>
+            </div>
+
+            <div class="control-buttons">
+                <button id="resetBtn">초기화</button>
+            </div>
+        </div>
+
+        <!-- 중앙: 프로세스 시각화 -->
+        <div class="visualization-container">
+            <h3>Process Visualization</h3>
+            <div id="visualization"></div>
+            <div class="legend">
+                <div><span class="status idle"></span> 대기</div>
+                <div><span class="status processing"></span> 처리 중</div>
+                <div><span class="status success"></span> 완료</div>
+                <div><span class="status error"></span> 오류</div>
+            </div>
+        </div>
+
+        <!-- 우측: 결과 표시 패널 -->
+        <div class="results-panel">
+            <h3>Results</h3>
+            <div id="results" class="results-content">
+                <div class="placeholder">
+                    결과가 여기에 표시됩니다...
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 앱 로직 -->
+    <script src="app.js"></script>
+</body>
+</html>

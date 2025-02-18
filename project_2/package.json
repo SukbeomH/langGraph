@@ -1,0 +1,30 @@
+{
+  "name": "ai-function-generator",
+  "version": "1.0.0",
+  "description": "AI-powered function generation and visualization system",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.18.0",
+    "axios": "^1.7.9",
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SukbeomH/langGraph.git"
+  },
+  "author": "SukbeomH",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SukbeomH/langGraph/issues"
+  },
+  "homepage": "https://github.com/SukbeomH/langGraph#readme"
+}
